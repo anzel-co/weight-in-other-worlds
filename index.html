@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Mini Project</title>
+    </head>
+    <body>
+        <div id="fpage">
+            <p class="fp">Weight is calculated by multiplying an object's mass with the planet's gravity.</p>
+            <p class="fp">So an object with a mass of 10 Newtons would weight 98 kilograms in earth and 16.2 kilograms in Earth's moon.<br/>
+                This means that you weight more on planets with stronger gravity and you weight less on planets with weaker gravity.
+            </p>
+            <button id="cyw">Calculate Your Weight</button>
+        </div>
+        <div id="mainpage">
+        <header>
+            <h1>How much would an object weight in other planets?</h1>
+                <div id="msc">
+                    <input id="mass" placeholder="Mass in Kilogram" />
+                    <select>
+                        <option value='none'>--select planet-- </option>
+                        <option value='mercury'>Mercury</option>
+                        <option value='venus'>Venus</option>
+                        <option value='earth'>Earth</option>
+                        <option value='mars'>Mars</option>
+                        <option value='jupiter'>Jupiter</option>
+                        <option value='saturn'>Saturn</option>
+                        <option value='uranus'>Uranus</option>
+                        <option value='neptune'>Neptune</option>
+                        <option value='moon'>Moon</option>
+                    </select>
+                    <button id="cw">Calculate weight</button>
+                </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="image">
+                    <img src='earth.png' class="planet-image"/>
+                </div>
+                <div class="description"></div>
+            </div>
+        </div>
+    
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
