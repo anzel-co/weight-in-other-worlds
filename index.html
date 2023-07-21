@@ -4,8 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A mini project that calculates how much an object would weigh in other planets. This is a simple demonstration about the difference of mass and weight.">
+        <meta name="keywords" content="planets mass weight mercury venus earth mars jupiter saturn uranues neptune moon science project html5 css3 javascript js">
+        <meta name="author" content="Ansari Usman">
+        <meta name="author" content="anzel.co">
+
         <link rel="stylesheet" href="style.css">
-        <title>Mini Project</title>
+        
+        <title>Weigh in other Worlds</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
     </head>
     <body>
         <div id="fpage">
@@ -13,38 +20,37 @@
             <p class="fp">So an object with a mass of 10 Newtons would weight 98 kilograms in earth and 16.2 kilograms in Earth's moon.<br/>
                 This means that you weight more on planets with stronger gravity and you weight less on planets with weaker gravity.
             </p>
-            <button id="cyw">Calculate Your Weight</button>
+            <button id="cyw">CALCULATE YOUR WEIGHT</button>
         </div>
         <div id="mainpage">
-        <header>
-            <h1>How much would an object weight in other planets?</h1>
-                <div id="msc">
-                    <input id="mass" placeholder="Mass in Kilogram" />
-                    <select>
-                        <option value='none'>--select planet-- </option>
-                        <option value='mercury'>Mercury</option>
-                        <option value='venus'>Venus</option>
-                        <option value='earth'>Earth</option>
-                        <option value='mars'>Mars</option>
-                        <option value='jupiter'>Jupiter</option>
-                        <option value='saturn'>Saturn</option>
-                        <option value='uranus'>Uranus</option>
-                        <option value='neptune'>Neptune</option>
-                        <option value='moon'>Moon</option>
-                    </select>
-                    <button id="cw">Calculate weight</button>
+            <header>
+                <h1>How much would an object weight in other planets?</h1>
+                    <div id="msc">
+                        <input id="mass" placeholder="Mass in Kilogram" />
+                        <select>
+                            <option value='none'>--select planet-- </option>
+                            <option value='mercury'>Mercury</option>
+                            <option class='option-planet' value='venus'>Venus</option>
+                            <option value='earth'>Earth</option>
+                            <option value='mars'>Mars</option>
+                            <option value='jupiter'>Jupiter</option>
+                            <option value='saturn'>Saturn</option>
+                            <option value='uranus'>Uranus</option>
+                            <option value='neptune'>Neptune</option>
+                            <option value='moon'>Moon</option>
+                        </select>
+                        <button id="cw">Calculate Weight</button>
+                    </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="image">
+                        <img src='earth.png' class="planet-image" alt="image"/>
+                    </div>
+                    <div class="description"></div>
                 </div>
-        </header>
-        <main>
-            <div class="container">
-                <div class="image">
-                    <img src='earth.png' class="planet-image"/>
-                </div>
-                <div class="description"></div>
-            </div>
+            </main>
         </div>
-    
-        </main>
         <script src="script.js"></script>
     </body>
 </html>
